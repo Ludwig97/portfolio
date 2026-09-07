@@ -363,6 +363,18 @@ transform: translate(-50%,-50%);
     overflow: hidden;
     display: inline-block;
 }
+.profile_circle .logo-light {
+    display: block;
+}
+.profile_circle .logo-dark {
+    display: none;
+}
+body.dark-mode .profile_circle .logo-light {
+    display: none;
+}
+body.dark-mode .profile_circle .logo-dark {
+    display: block;
+}
 
 /* ---- End profile ---- */
 
