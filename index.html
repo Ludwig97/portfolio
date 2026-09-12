@@ -34,10 +34,12 @@ Purchase:
     <link rel="apple-touch-icon" href="assets/images/logos/LS_logo.png">
     <title>Portfolio | Mis Servicios</title>
     <!-- SEO Meta -->
-    <meta name="description" content="Portfolio personal con servicios de desarrollo web: landing pages, sitios administrables y catálogos web interactivos.">
+    <meta name="description"
+        content="Portfolio personal con servicios de desarrollo web: landing pages, sitios administrables y catálogos web interactivos.">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Mi Portfolio">
-    <meta property="og:description" content="Portfolio personal con servicios de desarrollo web: landing pages, sitios administrables y catálogos web interactivos.">
+    <meta property="og:description"
+        content="Portfolio personal con servicios de desarrollo web: landing pages, sitios administrables y catálogos web interactivos.">
     <meta property="og:image" content="https://ludwig97.github.io/portfolio/assets/images/logos/LS_logo.png">
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="2000">
@@ -56,6 +58,25 @@ Purchase:
             <img src="assets/images/loader.gif" id="preloader_image" alt="loader">
         </div>
     </div>
+    <!-- start navbar -->
+    <div class="portfolio_navbar">
+        <a href="#contact_sec" class="navbar-logo">
+            <img src="assets/images/logos/LS_logo.png" alt="logo" class="logo-light" />
+            <img src="assets/images/logos/LS_logo_blanco.png" alt="logo" class="logo-dark" />
+        </a>
+        <button class="navbar-toggle" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="navbar-links">
+            <li><a href="#about_sec" class="active">Inicio</a></li>
+            <li><a href="#services_sec">Mis Servicios</a></li>
+            <li><a href="#experience_sec">Mi Experiencia</a></li>
+            <li><a href="#contact_sec">Contactame</a></li>
+        </ul>
+    </div>
+    <!-- End navbar -->
     <!-- start side bar -->
     <div class="port_sidebar_wrapper mport_sidebar_wrapper">
         <div class="port_sidebar_profile">
@@ -444,21 +465,16 @@ Purchase:
                         </div>
                         <div class="col-xl-7 col-lg-12 col-md-12">
                             <div class="right_section">
-                                <div class="port_heading_wrapper">
-                                    <div class="port_sub_heading_wrapper">
-                                        <h2 class="port_sub_heading">Sobre mi </h2>
-                                    </div>
+                                <h2 class="about_tophead">Desarrollo web que hace crecer tu negocio</h2>
+                                <div class="cta_btn_wrapper">
+                                    <a href="javascript:;" class="portfolio_btn btn_yellow" id="landing_contact_btn">
+                                        <span class="first_text">Contactanos</span>
+                                        <span class="second_text">Contactar</span>
+                                    </a>
                                 </div>
-                                <h2 class="about_tophead">Desarrollador Full Stack con experiencia en el desarrollo y
-                                    mantenimiento de aplicaciones web robustas.</h2>
-                                <p class="about_deatils">
-                                    Desarrollo y mantengo plataformas web robustas utilizando Laravel, Next.js y bases
-                                    de datos relacionales. Desde arquitectura backend y APIs RESTful hasta landings
-                                    modernas y proyectos ágiles a medida, me enfoco en entregar software de alto
-                                    rendimiento y optimizado para cada necesidad..</p>
                                 <div class="signature_box">
                                     <div class="name">
-                                        <h2>Luis Fernando Nogales</h2>
+                                        <!-- <h2>Luis Fernando Nogales</h2> -->
                                         <!-- <p>UI &amp; UX Designer</p> -->
                                     </div>
                                     <div class="signature">
@@ -701,8 +717,7 @@ Purchase:
             </div>
         </div> -->
         <!-- End progress bar section  -->
-        <div class="port_experience_setions  page_scroll" data-scroll="1" id="experience_sec">
-            <!-- start Experience section  -->
+        <!-- <div class="port_experience_setions  page_scroll" data-scroll="2" id="experience_sec">
             <div class="experience_section">
                 <div class="container">
                     <div class="row">
@@ -716,7 +731,6 @@ Purchase:
                         </div>
                     </div>
                     <div class="row">
-                        <!-- BLOQUE 1: Motivame.io -->
                         <div class="col-lg-6 col-md-12">
                             <div class="exprince_box ex_leftsidebox">
                                 <div class="row">
@@ -745,7 +759,6 @@ Purchase:
                             </div>
                         </div>
 
-                        <!-- BLOQUE 2: Domi CRM -->
                         <div class="col-lg-6 col-md-12">
                             <div class="exprince_box ex_leftsidebox">
                                 <div class="row">
@@ -774,7 +787,6 @@ Purchase:
                             </div>
                         </div>
 
-                        <!-- BLOQUE 3: Porongo 1714 -->
                         <div class="col-lg-6 col-md-12">
                             <div class="exprince_box ex_rightsidebox">
                                 <div class="row">
@@ -803,7 +815,6 @@ Purchase:
                             </div>
                         </div>
 
-                        <!-- BLOQUE 4: Catering & Logística de Gas -->
                         <div class="col-lg-6 col-md-12">
                             <div class="exprince_box ex_rightsidebox">
                                 <div class="row">
@@ -832,7 +843,6 @@ Purchase:
                             </div>
                         </div>
 
-                        <!-- BLOQUE 5: Next.js & Landings -->
                         <div class="col-lg-6 col-md-12">
                             <div class="exprince_box ex_leftsidebox">
                                 <div class="row">
@@ -860,38 +870,12 @@ Purchase:
                                 </div>
                             </div>
                         </div>
-
-                        <!-- BLOQUE 6: Formación Académica -->
-                        <!-- <div class="col-lg-6 col-md-12">
-            <div class="exprince_box ex_leftsidebox">
-                <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-12 padding-0">
-                        <div class="ex_leftside">
-                            <h1>UAGRM</h1>
-                            <h4>Educación</h4>
-                            <h1>Santa Cruz</h1>
-                        </div>
-                    </div>
-                    <div class="col-lg-8 col-md-8 col-sm-8 col-12">
-                        <div class="ex_rightside">
-                            <h4>
-                                Ing. en <span data-hover="Sistemas" class="data_hover c-pink">Sistemas</span>
-                            </h4>
-                            <span class="c-pink">Universidad Autónoma Gabriel René Moreno</span>
-                            <p class="ex_details">Estudiante en Ingeniería en Sistemas.</p>
-                            <p class="more_content">Formación orientada al diseño de software, bases de datos y arquitectura de sistemas.</p>
-                            <a class="ex_btn">Ver más</a>
-                        </div>
                     </div>
                 </div>
             </div>
         </div> -->
-                    </div>
-                </div>
-            </div>
-        </div>
         <!-- End Experience section  -->
-        <div class="port_services_setions  page_scroll" data-scroll="2" id="services_sec">
+        <div class="port_services_setions  page_scroll" data-scroll="1" id="services_sec">
             <!-- start services section  -->
             <div class="services_section">
                 <div class="container">
@@ -906,38 +890,77 @@ Purchase:
                         </div>
                     </div>
                     <div class="row">
-                        <!-- Servicio 1: Landing Pages Estáticas -->
-                        <div class="col-lg-4 col-md-6 text-center">
+                        <!-- Servicio 1: Páginas de Aterrizaje -->
+                        <div class="col-lg-3 col-md-6 text-center">
                             <div class="port_services_box_wrapper">
                                 <div class="port_services_box">
-                                    <img src="assets/images/services/port_services01.png" alt="Landing Pages">
-                                    <h2 class="project_heading">Landing Pages</h2>
-                                    <p class="project_pera">Páginas de aterrizaje estáticas optimizadas para velocidad,
-                                        alta conversión de leads y campañas publicitarias.</p>
+                                    <div class="demo_preview">
+                                        <a href="https://demo-landing-catalogue.vercel.app/" target="_blank"
+                                            rel="noopener">
+                                            <img src="assets/images/demos/landing-catalogue.png"
+                                                alt="Páginas de Aterrizaje" />
+                                            <span class="demo_overlay">
+                                                <span class="portfolio_btn btn_red">
+                                                    <span class="first_text">Ver demo</span>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <h2 class="project_heading">Páginas de Aterrizaje</h2>
+                                    <p class="project_pera">Páginas web diseñadas exclusivamente para captar la atención
+                                        de tus clientes y hacer que te contacten o te dejen sus datos rápidamente.
+                                        Ideales para promocionar un producto, oferta o campaña en redes sociales.</p>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Servicio 2: Sitios Web Administrables -->
-                        <div class="col-lg-4 col-md-6 text-center">
+                        <div class="col-lg-3 col-md-6 text-center">
                             <div class="port_services_box_wrapper">
                                 <div class="port_services_box">
                                     <img src="assets/images/services/port_services02.png" alt="Sitios Administrables">
-                                    <h2 class="project_heading">Sitios Administrables</h2>
-                                    <p class="project_pera">Desarrollo web con panel de administración gestor de
-                                        contenidos (CMS) para modificar textos e imágenes fácilmente.</p>
+                                    <h2 class="project_heading">Sitios Web Administrables</h2>
+                                    <p class="project_pera">Tu sitio web completo con un panel fácil de usar, para que
+                                        puedas cambiar o actualizar fotos, textos y detalles tú mismo en cualquier
+                                        momento, sin depender de un programador.</p>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- Servicio 3: Catálogos Web Interactivos -->
-                        <div class="col-lg-4 col-md-6 text-center">
+                        <!-- Servicio 3: Catálogos Digitales -->
+                        <div class="col-lg-3 col-md-6 text-center">
                             <div class="port_services_box_wrapper">
                                 <div class="port_services_box">
                                     <img src="assets/images/services/port_services03.png" alt="Catálogos Web">
-                                    <h2 class="project_heading">Catálogos Web</h2>
-                                    <p class="project_pera">Plataformas digitales para exhibir productos o servicios de
-                                        forma estructurada, con filtros e integración a WhatsApp.</p>
+                                    <h2 class="project_heading">Catálogos Digitales</h2>
+                                    <p class="project_pera">Una vitrina virtual para mostrar todos tus productos o
+                                        servicios de forma organizada, permitiendo que tus clientes exploren tus
+                                        productos por categorías antes de comprar o consultar.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Servicio 4: Portafolios y Currículums Digitales -->
+                        <div class="col-lg-3 col-md-6 text-center">
+                            <div class="port_services_box_wrapper">
+                                <div class="port_services_box">
+                                    <div class="demo_preview">
+                                        <a href="https://demo-portfolio-ashen-eight.vercel.app" target="_blank"
+                                            rel="noopener">
+                                            <img src="assets/images/demos/demo-image.png"
+                                                alt="Portafolios y Currículums" />
+                                            <span class="demo_overlay">
+                                                <span class="portfolio_btn btn_red">
+                                                    <span class="first_text">Ver demo</span>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <h2 class="project_heading">Portafolios y Currículums Digitales</h2>
+                                    <p class="project_pera">Tu carta de presentación en internet para mostrar tus
+                                        proyectos, experiencia y trayectoria profesional de forma moderna y atractiva.
+                                        Ideal para destacar frente a otros candidatos, enviar a clientes potenciales y
+                                        causar una excelente primera impresión.</p>
                                 </div>
                             </div>
                         </div>
@@ -2002,8 +2025,8 @@ Purchase:
             </div> -->
             <!-- End map section  -->
             <!-- <div class="port_contact_setions" id="scroll_contact"> -->
-                <!-- start Contact section  -->
-                <!-- <div class="contact_section">
+            <!-- start Contact section  -->
+            <!-- <div class="contact_section">
                     <div class="container">
                         <div class="port_contact_mainbox">
                             <div class="row">
@@ -2342,6 +2365,54 @@ Purchase:
                     toggle.innerHTML = '&#9790;';
                 }
             });
+        })();
+        /* navbar navigation */
+        (function () {
+            var navbar = document.querySelector('.portfolio_navbar');
+            var navLinks = document.querySelectorAll('.navbar-links a');
+            var navOffset = 70;
+            function scrollToId(id) {
+                var target = document.querySelector(id);
+                if (!target) return;
+                var top = target.getBoundingClientRect().top + window.pageYOffset - navOffset;
+                window.scrollTo({ top: top, behavior: 'smooth' });
+            }
+            navLinks.forEach(function (link) {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    scrollToId(link.getAttribute('href'));
+                    if (navbar) navbar.classList.remove('navbar-open');
+                });
+            });
+            var navToggle = document.querySelector('.navbar-toggle');
+            if (navToggle && navbar) {
+                navToggle.addEventListener('click', function () {
+                    navbar.classList.toggle('navbar-open');
+                });
+            }
+            var ctaBtn = document.getElementById('landing_contact_btn');
+            if (ctaBtn) {
+                ctaBtn.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    scrollToId('#contact_sec');
+                });
+            }
+            function updateActiveNav() {
+                var scrollPos = window.pageYOffset + navOffset + 60;
+                var best = null;
+                document.querySelectorAll('.page_scroll').forEach(function (sec) {
+                    var top = sec.getBoundingClientRect().top + window.pageYOffset;
+                    if (scrollPos >= top && (!best || top >= best.top)) {
+                        best = { id: sec.getAttribute('id'), top: top };
+                    }
+                });
+                var current = best ? best.id : null;
+                navLinks.forEach(function (link) {
+                    link.classList.toggle('active', link.getAttribute('href') === '#' + current);
+                });
+            }
+            window.addEventListener('scroll', updateActiveNav);
+            updateActiveNav();
         })();
     </script>
 </body>

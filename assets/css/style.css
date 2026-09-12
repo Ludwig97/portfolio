@@ -3716,3 +3716,217 @@ body.dark-mode .education_right .education_mright {
     border-color: #0f3460;
 }
 /* ================== 21 End Dark Mode ================== */
+
+/* ================== 22 Landing Layout ================== */
+.portfolio_navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    background: #fff;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    z-index: 999;
+}
+body.dark-mode .portfolio_navbar {
+    background: #16213e;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.4);
+}
+.portfolio_navbar .navbar-logo img {
+    max-height: 45px;
+    width: auto;
+}
+.portfolio_navbar .navbar-logo .logo-light {
+    display: block;
+}
+.portfolio_navbar .navbar-logo .logo-dark {
+    display: none;
+}
+body.dark-mode .portfolio_navbar .navbar-logo .logo-light {
+    display: none;
+}
+body.dark-mode .portfolio_navbar .navbar-logo .logo-dark {
+    display: block;
+}
+.portfolio_navbar .navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+.portfolio_navbar .navbar-links a {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: #222;
+    text-decoration: none;
+    position: relative;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+body.dark-mode .portfolio_navbar .navbar-links a {
+    color: #e0e0e0;
+}
+.portfolio_navbar .navbar-links a:hover,
+.portfolio_navbar .navbar-links a.active {
+    color: #00c8da;
+}
+.portfolio_navbar .navbar-links a.active:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 2px;
+    background: #ffc454;
+}
+.navbar-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 5px;
+}
+.navbar-toggle span {
+    width: 24px;
+    height: 3px;
+    background: #222;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+body.dark-mode .navbar-toggle span {
+    background: #e0e0e0;
+}
+@media (max-width: 767px) {
+    .portfolio_navbar {
+        padding: 0 15px;
+    }
+    .portfolio_navbar .navbar-links {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background: #fff;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        padding: 10px 25px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        display: none;
+    }
+    body.dark-mode .portfolio_navbar .navbar-links {
+        background: #16213e;
+    }
+    .portfolio_navbar.navbar-open .navbar-links {
+        display: flex;
+    }
+    .portfolio_navbar .navbar-links a {
+        width: 100%;
+        padding: 12px 0;
+    }
+    .navbar-toggle {
+        display: flex;
+    }
+}
+/* hide original sidebar + togglebox and reset content margins */
+.port_sidebar_wrapper {
+    display: none !important;
+}
+.port_togglebox {
+    display: none !important;
+}
+.port_bannerbg_wrapper {
+    display: none;
+}
+.port_sec_warapper {
+    margin-left: 0 !important;
+}
+/* reorder sections: About, Services, Experience, Contact */
+.port_sec_warapper {
+    display: flex;
+    flex-direction: column;
+}
+#about_sec {
+    order: 1;
+}
+#services_sec {
+    order: 2;
+}
+#experience_sec {
+    order: 3;
+}
+#contact_sec {
+    order: 4;
+}
+#about_sec .row {
+    align-items: center;
+    min-height: calc(100vh - 70px);
+    margin: 0;
+}
+#about_sec .col-xl-7,
+#about_sec .col-xl-5,
+#about_sec .col-lg-12,
+#about_sec .col-md-12 {
+    display: flex;
+}
+#about_sec .right_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+.cta_btn_wrapper {
+    margin-top: 20px;
+}
+/* preview de la demo en el servicio de portfolio */
+.demo_preview {
+    position: relative;
+    margin: -30px -30px 20px -30px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.demo_preview a {
+    display: block;
+    position: relative;
+    text-decoration: none;
+}
+.demo_preview img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+    transition: transform 0.4s ease;
+}
+.demo_preview:hover img {
+    transform: scale(1.05);
+}
+.demo_overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.55);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.demo_preview:hover .demo_overlay {
+    opacity: 1;
+}
+/* offset scroll for fixed navbar */
+#about_sec,
+#contact_sec,
+#services_sec,
+#experience_sec {
+    scroll-margin-top: 70px;
+}
+/* ================== 22 End Landing Layout ================== */
