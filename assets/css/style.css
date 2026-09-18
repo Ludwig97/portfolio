@@ -3917,6 +3917,17 @@ body.dark-mode .navbar-toggle span {
 .cta_btn_wrapper {
     margin-top: 20px;
 }
+.about_slogan {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #333333;
+    margin: 15px 0 0;
+    max-width: 520px;
+    font-weight: 300;
+}
+body.dark-mode .about_slogan {
+    color: #e8e8e8;
+}
 /* preview de la demo en el servicio de portfolio */
 .demo_preview {
     position: relative;
@@ -3940,18 +3951,11 @@ body.dark-mode .navbar-toggle span {
 .demo_preview:hover img {
     transform: scale(1.05);
 }
-.demo_overlay {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(0, 0, 0, 0.55);
-    opacity: 0;
-    transition: opacity 0.3s ease;
+.demo_btn_wrapper {
+    margin-top: 15px;
 }
-.demo_preview:hover .demo_overlay {
-    opacity: 1;
+.demo_btn_wrapper .demo_btn {
+    width: 100%;
 }
 /* offset scroll for fixed navbar */
 #about_sec,
@@ -3981,7 +3985,8 @@ body.dark-mode .navbar-toggle span {
 .port_pricing_head {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    text-align: center;
     border-bottom: 2px solid #f0f0f0;
     padding-bottom: 18px;
     margin-bottom: 18px;
@@ -4008,11 +4013,13 @@ body.dark-mode .navbar-toggle span {
     margin-bottom: 20px;
 }
 .port_pricing_incl,
-.port_pricing_not {
+.port_pricing_not,
+.port_pricing_adv {
     margin-bottom: 18px;
 }
 .port_pricing_incl h4,
-.port_pricing_not h4 {
+.port_pricing_not h4,
+.port_pricing_adv h4 {
     font-size: 16px;
     font-weight: 700;
     color: #556d91;
@@ -4025,7 +4032,8 @@ body.dark-mode .navbar-toggle span {
     padding: 0;
 }
 .port_pricing_incl li,
-.port_pricing_not li {
+.port_pricing_not li,
+.port_pricing_adv li {
     color: #777777;
     font-size: 14px;
     line-height: 1.6;
@@ -4044,6 +4052,12 @@ body.dark-mode .navbar-toggle span {
     left: 0;
     top: 7px;
     color: #e53935;
+}
+.port_pricing_adv li i {
+    position: absolute;
+    left: 0;
+    top: 7px;
+    color: #ffc454;
 }
 .pricing_btn {
     margin-top: auto;
@@ -4066,11 +4080,13 @@ body.dark-mode .port_pricing_desc {
     color: #b0b0b0;
 }
 body.dark-mode .port_pricing_incl h4,
-body.dark-mode .port_pricing_not h4 {
+body.dark-mode .port_pricing_not h4,
+body.dark-mode .port_pricing_adv h4 {
     color: #e0e0e0;
 }
 body.dark-mode .port_pricing_incl li,
-body.dark-mode .port_pricing_not li {
+body.dark-mode .port_pricing_not li,
+body.dark-mode .port_pricing_adv li {
     color: #b0b0b0;
 }
 /* ================== 23 End Pricing / Packages ================== */
